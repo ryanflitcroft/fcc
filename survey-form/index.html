@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='utf-8' />
+    <meta name='viewport' content='width=device-width, initial-scale=1' />
+    <link rel='stylesheet' href='styles.css' />
+    <title>Software Developer Application</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header>
+      <h1 id='title'>Software Developr <span>- Responsiv Web Design</span></h1>
+      <p id='description'>Complete Teh Applicashun Below 2 Be Considerd 4 Dis Role:</p>
+    </header>
+
+    <!-- MAIN -->
+    <main>
+      <section>
+        <form id='survey-form' action=''>
+          <fieldset class='container-row'>
+          <legend>Informashun</legend>
+            <div class='item'>
+              <label id='name-label' for='name' class='bold'>Furst Naym: 
+                <input id='name' type='text' name='first-name' placeholder='Kitty' required />
+              </label>
+              <label id='last-name-label' for='last-name' class='bold'>Last Naym: 
+                <input id='last-name' name='last-name' type='text' placeholder='Purry' required />
+              </label>
+            </div>
+            <div class='item'>
+              <label id='email-label' for='email' class='bold'>Email: 
+                <input id='email' name='email' type='email' placeholder='rawr@email.com' required />
+              </label>
+              <label id='phone-label' for='phone' class='bold'>Fone Numbr: 
+                <input id='phone' name'phone' type='tel' pattern='[2-9]{1}[0-8]{1}[0-9]{8}' placeholder='5035555555' required />
+              </label>
+            </div>
+          </fieldset>
+
+          <fieldset class='container-col'>
+            <legend>Skills</legend>
+
+            <label id='education-label' for='education' class='bold'>Wer Did U Go 2 Skool? <span class='small'>(Iz K If U Nowhere)</span>
+              <input id='education' name='education' placeholder='Alchemy Code Lab' />
+            </label>
+            <div>
+              <p class='bold'>Wut Language Tho? <span class='small'>(Check all dat apply)</span></p>
+              
+              <label id='html-label' for='html'>
+                <input id='html' name='skills' type='checkbox' value='HTML' />
+                <abbr title='HyperText Markup Language'>HTML</abbr>
+              </label>
+              <label id='css-label' for='css'>
+                <input id='css' name='skills' type='checkbox' value='CSS' />
+                <abbr title='Cascadin Style Sheets'>CSS</abbr>
+              </label>
+              <label id='javascript-label' for='javascript'>
+                <input id='javascript' name='skills' type='checkbox' value='JavaScript' />
+                <abbr title='JavaScript'>JS</abbr>
+              </label>
+              <label id='lolcode-label' for='lolcode'>
+                <input id='lolcode' name='skills' type='checkbox' value='LOLCODE' />
+                <abbr title='LOLCODE'>LOL</abbr>
+              </label>
+            </div>
+            <label id='number-label' for='number' class='bold'>How Lotz Da Yeers?
+              <input id='number' name'number' type='number' min='0' max='99' placeholder='0' required />
+            </label>
+            <p class='bold'>U Rite Gud Code?</p>
+            <label id='yes-label' for='yes'>Yep
+              <input id='yes' name='yes-or-no' type='radio' value='yes' checked/>
+            </label>
+            <label id='no-label' for='no'>Nope
+              <input id='no' name='yes-or-no' type='radio' value='no' />
+            </label>
+            <label id='file-upload-label' for='file-upload' class='bold underline'>Upload Ur Resume
+              <input id='file-upload' name='file-upload' type='file' accept='.doc, .pdf, .txt' />
+            </label>
+            <label id='additional-label' for='additional' class='bold'>Addishunal Informashun:
+              <textarea id='additional' name='additional' rows='3' placeholder='It Important 2 Taek Care Ov Teh Patient, 2 Be Followd By Teh Client, But At Teh Same Tiem They Will Be Affectd By Sum Great Pains An Sufferings.'></textarea>
+            </label>
+          </fieldset>
+
+          <fieldset class='container-row'>
+            <legend>Almost Finishd</legend>
+            <label id='dropdown-label' for='dropdown' class='bold'>How Do U Knoe Us?
+              <select id='dropdown' name='dropdown'>
+                <option value='0'>Choose Wan</option>
+                <option value='1'>Ur Frenz</option>
+                <option value='2'>R Frenz</option>
+                <option value='3'>I Doan Knoe</option>
+              </select>
+            </label>
+            <label id='date-label' for='date' class='bold'>Wuts Teh Date?
+              <input id='date' name='date' type='date' />
+            </label>
+            <label id='agreements-label' for='agreements'>
+              <input id='agreements' name='agreements' value ='agreements' type='checkbox' required /> Agree 2 <a href='https://unthinking.photography/content/9-articles/23-the-war-and-peace-of-lolcats/2-image-happycat-cheezburger/image1_happycatcheese.jpg' target='_blank' class='bold underline'>Terms An Condishuns</a>
+            </label>
+          </fieldset>
+          <input id='submit' type='submit' class='bold' />
+        </form>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+
+    </footer>
+  </body>
+</html>
